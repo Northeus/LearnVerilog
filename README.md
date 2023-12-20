@@ -14,7 +14,7 @@ used software (so for quartus there might be needed some minor changes).
  - Might leave out wave files (`.vcd`) from git repo.
  - Reset would be much nicer for all modules we intend to test as it would
    remove all the dependance on internal structure of the module to test it.
-
+ - Tasks are really nice for removing duplicity in tests
 
 ## Coutner
 Simple counter with basic testbench syntax;
@@ -29,7 +29,8 @@ This week contains following modules with test banches:
  - debouncer
  - find\_rise
  - pwm
- -
+ - timer
+ - up_down_counter
 
 ### Week07
 
