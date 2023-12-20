@@ -12,6 +12,8 @@ used software (so for quartus there might be needed some minor changes).
 ## Tips
  - In case module doesn't have reset, set it's internal state for testbench.
  - Might leave out wave files (`.vcd`) from git repo.
+ - Reset would be much nicer for all modules we intend to test as it would
+   remove all the dependance on internal structure of the module to test it.
 
 
 ## Coutner
