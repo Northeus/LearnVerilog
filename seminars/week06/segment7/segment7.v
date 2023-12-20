@@ -1,14 +1,11 @@
 // module for translating 4-bit number to the 7-segment display
 module segment7 (
-	input 				enable,  // enable of the display, active 1 
-	input			[3:0]	data,    // input data
-	output reg	[6:0]	seg		// display's segments, active 0
-	);
+	input 				enable,  // enable of the display, active 1
+	input       [3:0]	data,    // input data
+	output reg	[6:0]	seg		 // display's segments, active 0
+    );
 
-	//  TASK 1: add the enable of the display to the code from the previous week
-	
-	always @(data, enable)
-	begin
+	always @(*)
 		if (enable)
 			case (data)
 				4'h0   : seg = 7'b1000000;
@@ -27,10 +24,9 @@ module segment7 (
 				4'hd   : seg = 7'b0100001;
 				4'hE   : seg = 7'b0000110;
 				4'hF   : seg = 7'b0001110;
-				default: seg = 7'b1111111; 		
+				default: seg = 7'b1111111;
 			endcase
 		else
 			seg = 7'b1111111;
-	end
 endmodule
 

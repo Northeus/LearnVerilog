@@ -11,6 +11,7 @@ used software (so for quartus there might be needed some minor changes).
 
 ## Tips
  - In case module doesn't have reset, set it's internal state for testbench.
+ - Might leave out wave files (`.vcd`) from git repo.
 
 
 ## Coutner
@@ -22,10 +23,10 @@ For quartus there might be need to do some minor changes,
 as i use iverilog with possible different standard.
 
 ### Week06
-This week contains following moduls:
+This week contains following modules with test banches:
  - debouncer
  - find\_rise
- -
+ - pwm
  -
 
 ### Week07
