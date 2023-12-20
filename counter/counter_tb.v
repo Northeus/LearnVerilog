@@ -20,7 +20,6 @@ module counter_tb;
     end
 
     initial begin
-        @(posedge CLK)
         Reset = 1;
 
         @(negedge CLK)
@@ -34,5 +33,10 @@ module counter_tb;
         end
 
         $finish;
+    end
+
+    initial begin
+        $dumpfile("counter.vcd");
+        $dumpvars(0, counter_tb);
     end
 endmodule

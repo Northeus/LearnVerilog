@@ -1,4 +1,5 @@
 module counter(input CLK, input Reset, output reg[7:0] data);
+    // Just an example, might be nicer to also have state for zero?
     always @(posedge CLK or posedge Reset)
     begin
         if (Reset)

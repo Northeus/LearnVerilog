@@ -1,0 +1,72 @@
+$date
+	Wed Dec 20 18:57:01 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module find_rise_tb $end
+$var wire 1 ! out $end
+$var reg 1 " clk $end
+$var reg 1 # err $end
+$var reg 1 $ in $end
+$scope module fr $end
+$var wire 1 " clk $end
+$var wire 1 $ in $end
+$var reg 1 ! out $end
+$var reg 1 % prev $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+0$
+0#
+0"
+x!
+$end
+#5
+0!
+1"
+#10
+0"
+#15
+1"
+#20
+1$
+0"
+#25
+1!
+1%
+1"
+#30
+0"
+#35
+0!
+1"
+#40
+0$
+0"
+#45
+0%
+1"
+#50
+1$
+0"
+#55
+1!
+1%
+1"
+#60
+0"
+#65
+0!
+1"
+#70
+0"
+#75
+1"
+#76
