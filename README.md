@@ -7,7 +7,8 @@ iverilog [testbench file] [modules file] && ./a.out
 ```
 
 Unfortunatelly it feels, that `iverilog` behaves a bit differently than previously
-used software (so for quartus there might be needed some minor changes).
+used software (so for quartus there might be needed some minor changes). Possible
+issue might be order of data loaded to vector from `readmemb` functions in testbench.
 
 ## Tips
  - In case module doesn't have reset, set it's internal state for testbench.
@@ -17,7 +18,7 @@ used software (so for quartus there might be needed some minor changes).
  - Tasks are really nice for removing duplicity in tests
 
 ## Coutner
-Simple counter with basic testbench syntax;
+Simple counter with basic testbench syntax.
 
 ## Seminars
 Testbanches for tasks in seminars.
@@ -33,5 +34,8 @@ This week contains following modules with test banches:
  - up_down_counter
 
 ### Week07
+This week contains following modules with test banches:
+ - 2x moore\_state\_machine
 
-## Gravity center
+## Gravity center \[WIP\]
+...
