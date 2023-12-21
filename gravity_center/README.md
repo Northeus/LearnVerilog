@@ -19,7 +19,7 @@ On each clk cycle, there is given a point `P` via its coordinates `(X, Y)`
 and weight `W`. Our module should store up to 5 points and compute the
 center of gravity $\( X_{gc}, Y_{gc} $\) as follows:
 
-$$\left( X_{gc}, Y_{gc} \right) \eq
+$$\left( X_{gc}, Y_{gc} \right) =
     \left(
         \frac{ \sum_{i=1}^5 X_i W_i }{ \sum{i=1}^5 W_i },
         \frac{ \sum_{i=1}^5 Y_i W_i }{ \sum{i=1}^5 W_i }
