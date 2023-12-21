@@ -21,8 +21,8 @@ center of gravity $\( X_{gc}, Y_{gc} $\) as follows:
 
 $$\left( X_{gc}, Y_{gc} \right) =
     \left(
-        \dfrac{ \sum_{i=1}^5 X_i W_i }{ \sum_{i=1}^5 W_i } \,
-        \dfrac{ \sum_{i=1}^5 Y_i W_i }{ \sum_{i=1}^5 W_i }
+        \frac{ \sum\limits_{i=1}^5 X_i W_i }{ \sum\limits_{i=1}^5 W_i } \,
+        \frac{ \sum\limits_{i=1}^5 Y_i W_i }{ \sum\limits_{i=1}^5 W_i }
     \right)$$
 
 I.e. the center of gravity is the weighted mean of last 5 points.
