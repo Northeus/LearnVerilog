@@ -35,7 +35,7 @@ be zero, thus we should compute the center only from the received points.
 Furthermore, due to the fact, that we are using whole numbers and we want the
 most precise outcome, we have to round it to the closest integer.
 
-Resultin point in case all the weights are zero should be $\left( 0, 0 \rgiht)$.
+Resultin point in case all the weights are zero should be $\left( 0, 0 \right)$.
 
 ## Difficulties
 There are two optional difficulties to chose from when solving this problem.
