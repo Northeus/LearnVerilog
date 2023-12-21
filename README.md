@@ -34,8 +34,7 @@ This week contains following modules with test banches:
  - up_down_counter
 
 ### Week07
-This week contains following modules with test banches:
- - 2x moore\_state\_machine
+This week contains just moore\_state\_machine module with testbanch.
 
 ## Gravity center \[WIP\]
 ...
