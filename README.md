@@ -9,6 +9,7 @@ iverilog [testbench file] [modules file] && ./a.out
 Unfortunatelly it feels, that `iverilog` behaves a bit differently than previously
 used software (so for quartus there might be needed some minor changes). Possible
 issue might be order of data loaded to vector from `readmemb` functions in testbench.
+(or i just don't remember how it worked, that's also an option ^^)
 
 ## Tips
  - In case module doesn't have reset, set it's internal state for testbench.
@@ -36,5 +37,5 @@ This week contains following modules with test banches:
 ### Week07
 This week contains just moore\_state\_machine module with testbanch.
 
-## Gravity center \[WIP\]
-...
+## Gravity center
+Module and testbench for gravity center computation algoritmh.

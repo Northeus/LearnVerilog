@@ -32,20 +32,26 @@ Whenever our data are ready, we simply set ready signal to high and on each
 clock cycle send out corresponding data. After the reset all weights should
 be zero, thus we should compute the center only from the received points.
 
+Furthermore, due to the fact, that we are using whole numbers and we want the
+most precise outcome, we have to round it to the closest integer.
+
+Resultin point in case all the weights are zero should be $\left( 0, 0 \rgiht)$.
+
 ## Difficulties
 There are two optional difficulties to chose from when solving this problem.
 Both are based on which point from the 5 loaded points should be swaped with
 the new incoming point.
 
-## Easy
+### Easy
 We compute gravity center only from the latest 5 points. That means we always
 replace the oldes point with a new one.
 
-## Hard
+### Hard
 We always replace the point that is furthest from the current gravity center.
 In case of two points within the same distance, we pick the one with lower
 X coordinate. If the X coordinates are same, we pick the point with lower Y
 coordinate. If the Y coordinates are same, we pick the point with the lower W.
 
-
+## Possible upgrades
+Generators in verilog might be used to deduplicate some code.
 
