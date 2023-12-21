@@ -16,7 +16,7 @@ module moore_state_machine
     input        reset,    // input clock and asynchronous reset
     input  [3:0] keys,     // input keys, log 1 is after pressing of key for one cycle of clk
     output       unlock,   // 1 after right sequence of keys, 0 in other states
-	output [3:0] progress  // progress of keys pressing
+    output [3:0] progress  // progress of keys pressing
 );
 
     parameter
