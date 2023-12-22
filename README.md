@@ -1,4 +1,5 @@
 # LearnVerilog
+(This repo contains attempt for a final project at course PV200.)
 Some verilog samples with testbanches.
 To run a testbench and generate wave file in `.vcd` format use:
 
