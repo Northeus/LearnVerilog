@@ -52,6 +52,16 @@ In case of two points within the same distance, we pick the one with lower
 X coordinate. If the X coordinates are same, we pick the point with lower Y
 coordinate. If the Y coordinates are same, we pick the point with the lower W.
 
+## Possible issues
+Rounding on floats can be tricky in tests.
+
+```py
+    # doesn't work
+    return (round(sum_x / sum_w), round(sum_y / sum_w))
+
+    # work
+    return (sum_x + sum_w // 2) // sum_w, (sum_y + sum_w // 2) // sum_w
+```
+
 ## Possible upgrades
 Generators in verilog might be used to deduplicate some code.
-
