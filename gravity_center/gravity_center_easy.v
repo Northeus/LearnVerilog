@@ -31,11 +31,11 @@ module gravity_center(
                  + mem_x[2] * mem_w[2]
                  + mem_x[3] * mem_w[3]
                  + mem_x[4] * mem_w[4];
-    assign sum_y = mem_x[0] * mem_w[0]
-                 + mem_x[1] * mem_w[1]
-                 + mem_x[2] * mem_w[2]
-                 + mem_x[3] * mem_w[3]
-                 + mem_x[4] * mem_w[4];
+    assign sum_y = mem_y[0] * mem_w[0]
+                 + mem_y[1] * mem_w[1]
+                 + mem_y[2] * mem_w[2]
+                 + mem_y[3] * mem_w[3]
+                 + mem_y[4] * mem_w[4];
 
     assign result_x = (sum_x + sum_w / 2) / sum_w;
     assign result_y = (sum_y + sum_w / 2) / sum_w;

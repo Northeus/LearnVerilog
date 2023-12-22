@@ -2,7 +2,7 @@
 
 module gravity_center_tb;
     parameter PERIOD     = 10;
-    parameter TEST_COUNT = 6;
+    parameter TEST_COUNT = 100;
 
     integer i;
     integer j;
@@ -74,8 +74,8 @@ module gravity_center_tb;
                 if ({Xc, Yc} != {expected_X, expected_Y})
                 begin
                     $display($time,,
-                        "Error: expected=(%h, %h), got=(%h, %h)",
-                        expected_X, expected_Y, Xc, Yc);
+                        "Error: expected=(%h, %h), got=(%h, %h), id=%0d",
+                        expected_X, expected_Y, Xc, Yc, j);
                     error = 1;
                 end
             end
